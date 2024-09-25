@@ -1,0 +1,38 @@
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+    height: 1000px;
+}
+
+/* Set light blue background color and 100% height */
+.sidenav {
+    background-color: #87CEEB;
+    height: 100%;
+}
+
+/* Set dark blue background color, white text and some padding */
+footer {
+    background-color: #2F4F7F;
+    color: white;
+    padding: 15px;
+}
+
+.row.header {
+    text-align: center;
+    background-color: #4682B4;
+    color: white;
+    height: 120px;
+}
+
+.row.header img,h1 {
+    display: inline-block;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+        max-width: 500px;
+    }
+    .row.content {height: auto;}
+}
