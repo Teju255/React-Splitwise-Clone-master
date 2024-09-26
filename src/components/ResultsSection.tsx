@@ -40,7 +40,7 @@ class ResultsSectionRaw extends React.Component<IResultsSectionProps> {
     private renderTotals(result: ICalculationResult): JSX.Element[] {
         return result.totals.map((t, idx) =>
             <p key={idx} className={t.type === TransactionType.GIVE ? 'text-danger' : 'text-success'}>
-                {`${t.person.name} has to ${t.type === TransactionType.GIVE ? 'give' : 'receive'} ${t.amount.toFixed(2)} $ in total`}
+                {`${t.person.name} has to ${t.type === TransactionType.GIVE ? 'give' : 'receive'} ${t.amount.toFixed(2)} ₹ in total`}
             </p>
         );
     }
